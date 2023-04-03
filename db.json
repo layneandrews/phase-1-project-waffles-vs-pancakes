@@ -1,0 +1,37 @@
+{
+    "breakfast" :[
+        {
+            "id": "1",
+            "name": "waffles",
+            "image": "./assets/pictures/Waffles.png",
+            "comment": ""
+        },
+
+        {
+            "id": "2",
+            "name": "pancakes",
+            "image": "./assets/pictures/Pancakes.png",
+            "comment": ""
+        },
+
+        {
+            "id": "3",
+            "name": "omelettes",
+            "image": "./assets/pictures/Omelette.png",
+            "comment": ""
+        },
+
+        {
+            "id": "4",
+            "name": "granola",
+            "image": "./assets/pictures/granola.png",
+            "comment": ""
+        },
+
+        {
+            "id": "5",
+            "name": "bacon",
+            "image": "./assets/pictures/Bacon.png",
+            "comment": ""
+        }
+]}
