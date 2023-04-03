@@ -9,7 +9,10 @@ When all of the food items have been eliminated the users will be left with one 
 If you are a developer who is wanting to add or contribute to this project, please feel free to fork a copy of this repo to your local machine where you can play with the code.
 This project is implemented using HTML, CSS and JavaScript, all of which have a dedicated file in this repository. 
 We are currently fetching our data for this project from a local json server using a local db.json file.
+<<<<<<< HEAD
 
 Enjoy!!!
 
 CC&L
+=======
+>>>>>>> fc0e8f99bbfc00c45bfa482443df27d5711574ff
