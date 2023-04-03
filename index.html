@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waffles VS. Pancakes</title>
-    <script defer src="index.js"></script>
-    <link rel="stylesheet" href="styles.css">
+	<title>Waffles vs. Pancakes</title>
 </head>
 <body>
-    <h1>hello</h1>
+	<h1>Waffles vs. Pancakes</h1>
+	<p>Choose your favorite breakfast food:</p>
+	<button id="waffles">Waffles</button>
+	<button id="pancakes">Pancakes</button>
+	<p id="result"></p>
+	<p>Now, which one do you prefer, your choice or Omelettes?</p>
+	<button id="choice"></button>
+	<button id="omelettes">Omelettes</button>
+	<p id="final-result"></p>
+	<p>Now, which one do you prefer, your previous choice or Granola?</p>
+	<button id="final-choice"></button>
+	<button id="granola">Granola</button>
+	<p id="final-outcome"></p>
+
+	<script>
+		const wafflesBtn = document.getElementById("waffles");
+		const pancakesBtn = document.getElementById("pancakes");
+		const firstChoiceBtn = document.getElementById("choice");
+		const omelettesBtn = document.getElementById("omelettes");
+		const thirdChoiceBtn = document.getElementById("final-choice");
+		const granolaBtn = document.getElementById("granola");
+		const result = document.getElementById("result");
+		const finalResult = document.getElementById("final-result");
+		const finalOutcome = document.getElementById("final-outcome");
+
+		wafflesBtn.addEventListener("click", function() {
+			result.innerHTML = "You chose Waffles!";
+			firstChoiceBtn.innerHTML = "Waffles";
+			finalChoiceBtn.innerHTML = "Waffles";
+		});
+
+		pancakesBtn.addEventListener("click", function() {
+			result.innerHTML = "You chose Pancakes!";
+			firstChoiceBtn.innerHTML = "Pancakes";
+			finalChoiceBtn.innerHTML = "Pancakes";
+		});
+
+		firstChoiceBtn.addEventListener("click", function() {
+			if (firstChoiceBtn.innerHTML === "Waffles") {
+				finalResult.innerHTML = "You chose Waffles over Omelettes!";
+			} else if (firstChoiceBtn.innerHTML === "Pancakes") {
+				finalResult.innerHTML = "You chose Pancakes over Omelettes!";
+			} else {
+				finalResult.innerHTML = "Please choose Waffles or Pancakes first!";
+			}
+		});
+
+		omelettesBtn.addEventListener("click", function() {
+			finalResult.innerHTML = "You chose Omelettes over " + firstChoiceBtn.innerHTML + "!";
+		});
+
+		thirdChoiceBtn.addEventListener("click", function() {
+			if (thirdChoiceBtn.innerHTML === "Waffles") {
+				finalOutcome.innerHTML = "You chose Waffles over Granola!";
+			} else if (finalChoiceBtn.innerHTML === "Pancakes") {
+				finalOutcome.innerHTML = "You chose Pancakes over Granola!";
+			} else {
+				finalOutcome.innerHTML = "Please choose Waffles or Pancakes first!";
+			}
+		});
+
+		granolaBtn.addEventListener("click", function() {
+			finalOutcome.innerHTML = "You chose Granola over " + finalChoiceBtn.innerHTML + "!";
+		});
+	</script>
 </body>
 </html>
