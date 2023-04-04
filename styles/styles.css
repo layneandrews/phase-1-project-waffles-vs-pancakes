@@ -26,6 +26,60 @@ h1 {
     align-items: center;
 }
 
+<<<<<<< HEAD
+/* .float-parent-element { 
+    width: 50%; 
+} 
+.float-child-element { 
+    float: left; 
+    width: 50%; 
+}  */
+
+.image-class {
+    /* child divs */
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(255, 136, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: rgb(255, 136, 0);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+=======
 .image-card {
     display: flex;
     flex-direction: column;
@@ -37,4 +91,5 @@ h1 {
 .selector {
     margin-top: 10px;
     /* adjust this value to change the distance between the image and the button */
+>>>>>>> main
 }

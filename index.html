@@ -24,14 +24,22 @@
 			<div class="image-card" id="image-card1">
 				<h2 id="title-1">Food Name</h2> <!--title for 1st image card-->
 				<img src="assets/pictures/Waffles.png" alt="Picture Here" height="200px" width="200px">
+<<<<<<< HEAD
+				<button class="selector button-52">Pick Me!</button>
+=======
 				<button class="selector1">Pick Me!</button>
+>>>>>>> main
 			</div>
 				
 			<!--second image card-->
 			<div class="image-card" id="image-card2" >
 				<h2 id="title-2">Food Name</h2> <!--title for 2nd image card-->
 				<img src="assets/pictures/Pancakes.png" alt="Picture Here" height="200px" width="200px">
+<<<<<<< HEAD
+				<button class="selector button-52">Pick Me!</button>
+=======
 				<button class="selector2">Pick Me!</button>
+>>>>>>> main
 			</div>	
 				
 				
@@ -42,15 +50,20 @@
 			
 				</ul> 
 			</div>
-			<!-- form hidden until button click -->
-			<div class="input-form" >
-				
-			</div>
-			<div class="comment-button">
-				<button>Comments</button>
-			</div>
 
-		</div>
+	<!-- form hidden until button click -->
+<head>
+	<title>Comments Section</title>
+</head>
+<body>
+	<button class="button-52" onclick="showComments()">Comments</button>
+	<div id="commentsSection" style="display:none">
+		<textarea id="commentBox"></textarea>
+		<button onclick="addComment()">Submit</button>
+		<div id="commentList"></div>
+	</div>
+	<script src="comments.js"></script>
+</body>
 </div>
 	<script src="./scripts/index.js"></script>
 </body>
