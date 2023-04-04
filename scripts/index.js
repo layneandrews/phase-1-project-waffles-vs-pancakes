@@ -53,7 +53,7 @@ granolaBtn.addEventListener("click", function () {
 
 //form hidden until button click
 function showComments() {
-  var x = document.getElementById("commentsSection");
+  const x = document.getElementById("commentsSection");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
@@ -62,9 +62,9 @@ function showComments() {
 }
 
 function addComment() {
-  var comment = document.getElementById("commentBox").value;
-  var node = document.createElement("p");
-  var textnode = document.createTextNode(comment);
+  const comment = document.getElementById("commentBox").value;
+  const node = document.createElement("p");
+  const textnode = document.createTextNode(comment);
   node.appendChild(textnode);
   document.getElementById("commentList").appendChild(node);
   document.getElementById("commentBox").value = "";
