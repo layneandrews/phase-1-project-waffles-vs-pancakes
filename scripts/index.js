@@ -16,20 +16,7 @@ const pickMeBtn2 = document.querySelector(".selector2");
 
 pickMeBtn1.addEventListener("click", () => {});
 
-thirdChoiceBtn.addEventListener("click", function () {
-  if (thirdChoiceBtn.innerHTML === "Waffles") {
-    finalOutcome.innerHTML = "You chose Waffles over Granola!";
-  } else if (finalChoiceBtn.innerHTML === "Pancakes") {
-    finalOutcome.innerHTML = "You chose Pancakes over Granola!";
-  } else {
-    finalOutcome.innerHTML = "Please choose Waffles or Pancakes first!";
-  }
-});
-
-granolaBtn.addEventListener("click", function () {
-  finalOutcome.innerHTML =
-    "You chose Granola over " + finalChoiceBtn.innerHTML + "!";
-});
+pickMeBtn2.addEventListener("click", () => {});
 
 //form hidden until button click
 function showComments() {
@@ -49,4 +36,4 @@ function addComment() {
   document.getElementById("commentList").appendChild(node);
   document.getElementById("commentBox").value = "";
 }
-pickMeBtn2.addEventListener("click", () => {});
+
