@@ -21,14 +21,25 @@ h1 {
     margin-bottom: 1%;
 }
 
-.image-card {
-    display: inline-block
+.image-holder {
+    /* parent div */
+    text-align: center;
+    white-space: nowrap;
+    
 }
 
-.float-parent-element { 
+/* .float-parent-element { 
     width: 50%; 
 } 
 .float-child-element { 
     float: left; 
     width: 50%; 
-} 
+}  */
+
+.image-class {
+    /* child divs */
+    display: inline-block;
+    vertical-align: top;
+    
+    
+}
