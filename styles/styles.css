@@ -25,21 +25,17 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  /* adjust this value to change the distance between the image-cards */
+}
 
-<<<<<<< HEAD
-/* .float-parent-element { 
-    width: 50%; 
-} 
-.float-child-element { 
-    float: left; 
-    width: 50%; 
-}  */
-
-.image-class {
-    /* child divs */
-    display: inline-block;
-    vertical-align: top;
-    
+.selector {
+  margin-top: 10px;
+      /* adjust this value to change the distance between the image and the button */
 }
 
 /* CSS */
@@ -79,17 +75,5 @@ h1 {
   .button-52 {
     padding: 13px 50px 13px;
   }
-=======
-.image-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    /* adjust this value to change the distance between the image-cards */
 }
 
-.selector {
-    margin-top: 10px;
-    /* adjust this value to change the distance between the image and the button */
->>>>>>> main
-}
