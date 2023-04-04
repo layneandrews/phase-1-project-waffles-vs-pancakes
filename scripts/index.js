@@ -50,3 +50,22 @@ granolaBtn.addEventListener("click", function () {
   finalOutcome.innerHTML =
     "You chose Granola over " + finalChoiceBtn.innerHTML + "!";
 });
+
+//form hidden until button click
+function showComments() {
+  var x = document.getElementById("commentsSection");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}
+
+function addComment() {
+  var comment = document.getElementById("commentBox").value;
+  var node = document.createElement("p");
+  var textnode = document.createTextNode(comment);
+  node.appendChild(textnode);
+  document.getElementById("commentList").appendChild(node);
+  document.getElementById("commentBox").value = "";
+}

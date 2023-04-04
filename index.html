@@ -42,15 +42,20 @@
 			
 				</ul> 
 			</div>
-			<!-- form hidden until button click -->
-			<div class="input-form" >
-				
-			</div>
-			<div class="comment-button">
-				<button>Comments</button>
-			</div>
 
-		</div>
+	<!-- form hidden until button click -->
+<head>
+	<title>Comments Section</title>
+</head>
+<body>
+	<button onclick="showComments()">Comments</button>
+	<div id="commentsSection" style="display:none">
+		<textarea id="commentBox"></textarea>
+		<button onclick="addComment()">Submit</button>
+		<div id="commentList"></div>
+	</div>
+	<script src="comments.js"></script>
+</body>
 </div>
 	<script src="./scripts/index.js"></script>
 </body>
