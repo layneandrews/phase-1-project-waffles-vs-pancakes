@@ -36,15 +36,6 @@ omelettesBtn.addEventListener("click", function () {
     "You chose Omelettes over " + firstChoiceBtn.innerHTML + "!";
 });
 
-thirdChoiceBtn.addEventListener("click", function () {
-  if (thirdChoiceBtn.innerHTML === "Waffles") {
-    finalOutcome.innerHTML = "You chose Waffles over Granola!";
-  } else if (finalChoiceBtn.innerHTML === "Pancakes") {
-    finalOutcome.innerHTML = "You chose Pancakes over Granola!";
-  } else {
-    finalOutcome.innerHTML = "Please choose Waffles or Pancakes first!";
-  }
-});
 
 granolaBtn.addEventListener("click", function () {
   finalOutcome.innerHTML =
