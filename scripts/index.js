@@ -1,40 +1,20 @@
-console.log('hello');
-const wafflesBtn = document.getElementById("waffles");
-const pancakesBtn = document.getElementById("pancakes");
-const firstChoiceBtn = document.getElementById("choice");
-const omelettesBtn = document.getElementById("omelettes");
-const thirdChoiceBtn = document.getElementById("final-choice");
-const granolaBtn = document.getElementById("granola");
-const result = document.getElementById("result");
-const finalResult = document.getElementById("final-result");
-const finalOutcome = document.getElementById("final-outcome");
+const imgLeft = document.querySelector("#image-card1 > img");
+const imgRight = document.querySelector("#image-card2 > img");
 
-wafflesBtn.addEventListener("click", function () {
-  result.innerHTML = "You chose Waffles!";
-  firstChoiceBtn.innerHTML = "Waffles";
-  finalChoiceBtn.innerHTML = "Waffles";
-});
+fetch("http://localhost:3000/breakfast")
+  .then((r) => r.json())
+  .then((breakfast) => {
+    console.log(breakfast);
+  });
 
-pancakesBtn.addEventListener("click", function () {
-  result.innerHTML = "You chose Pancakes!";
-  firstChoiceBtn.innerHTML = "Pancakes";
-  finalChoiceBtn.innerHTML = "Pancakes";
-});
+imgLeft.addEventListener("mouseover", () => {});
 
-firstChoiceBtn.addEventListener("click", function () {
-  if (firstChoiceBtn.innerHTML === "Waffles") {
-    finalResult.innerHTML = "You chose Waffles over Omelettes!";
-  } else if (firstChoiceBtn.innerHTML === "Pancakes") {
-    finalResult.innerHTML = "You chose Pancakes over Omelettes!";
-  } else {
-    finalResult.innerHTML = "Please choose Waffles or Pancakes first!";
-  }
-});
+imgRight.addEventListener("mouseover", () => {});
+//the 10 lines below this comment just select the 'pick me' buttons and set event listeners to them
+const pickMeBtn1 = document.querySelector(".selector1");
+const pickMeBtn2 = document.querySelector(".selector2");
 
-omelettesBtn.addEventListener("click", function () {
-  finalResult.innerHTML =
-    "You chose Omelettes over " + firstChoiceBtn.innerHTML + "!";
-});
+pickMeBtn1.addEventListener("click", () => {});
 
 thirdChoiceBtn.addEventListener("click", function () {
   if (thirdChoiceBtn.innerHTML === "Waffles") {
@@ -69,3 +49,4 @@ function addComment() {
   document.getElementById("commentList").appendChild(node);
   document.getElementById("commentBox").value = "";
 }
+pickMeBtn2.addEventListener("click", () => {});
