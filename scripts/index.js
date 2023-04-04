@@ -1,52 +1,12 @@
-console.log('hello');
-const wafflesBtn = document.getElementById("waffles");
-const pancakesBtn = document.getElementById("pancakes");
-const firstChoiceBtn = document.getElementById("choice");
-const omelettesBtn = document.getElementById("omelettes");
-const thirdChoiceBtn = document.getElementById("final-choice");
-const granolaBtn = document.getElementById("granola");
-const result = document.getElementById("result");
-const finalResult = document.getElementById("final-result");
-const finalOutcome = document.getElementById("final-outcome");
+const imgLeft = document.querySelector("#image-card1 > img");
+const imgRight = document.querySelector("#image-card2 > img");
 
-wafflesBtn.addEventListener("click", function () {
-  result.innerHTML = "You chose Waffles!";
-  firstChoiceBtn.innerHTML = "Waffles";
-  finalChoiceBtn.innerHTML = "Waffles";
-});
+fetch("http://localhost:3000/breakfast").then(r => r.json()).then((breakfast) => {
+  console.log(breakfast)
+})
 
-pancakesBtn.addEventListener("click", function () {
-  result.innerHTML = "You chose Pancakes!";
-  firstChoiceBtn.innerHTML = "Pancakes";
-  finalChoiceBtn.innerHTML = "Pancakes";
-});
+imgLeft.addEventListener("mouseover", () => {
 
-firstChoiceBtn.addEventListener("click", function () {
-  if (firstChoiceBtn.innerHTML === "Waffles") {
-    finalResult.innerHTML = "You chose Waffles over Omelettes!";
-  } else if (firstChoiceBtn.innerHTML === "Pancakes") {
-    finalResult.innerHTML = "You chose Pancakes over Omelettes!";
-  } else {
-    finalResult.innerHTML = "Please choose Waffles or Pancakes first!";
-  }
-});
+} )
 
-omelettesBtn.addEventListener("click", function () {
-  finalResult.innerHTML =
-    "You chose Omelettes over " + firstChoiceBtn.innerHTML + "!";
-});
-
-thirdChoiceBtn.addEventListener("click", function () {
-  if (thirdChoiceBtn.innerHTML === "Waffles") {
-    finalOutcome.innerHTML = "You chose Waffles over Granola!";
-  } else if (finalChoiceBtn.innerHTML === "Pancakes") {
-    finalOutcome.innerHTML = "You chose Pancakes over Granola!";
-  } else {
-    finalOutcome.innerHTML = "Please choose Waffles or Pancakes first!";
-  }
-});
-
-granolaBtn.addEventListener("click", function () {
-  finalOutcome.innerHTML =
-    "You chose Granola over " + finalChoiceBtn.innerHTML + "!";
-});
+imgRight.addEventListener("mouseover", () => {});
