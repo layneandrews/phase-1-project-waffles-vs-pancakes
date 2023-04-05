@@ -56,22 +56,22 @@ fetch("http://localhost:3000/breakfast")
 // imgRight.addEventListener("mouseover", () => {});
 
 
-//form hidden until button click
-// function showComments() {
-//   const x = document.getElementById("commentsSection");
-//   if (x.style.display === "none") {
-//       x.style.display = "block";
-//   } else {
-//       x.style.display = "none";
-//   }
-// }
+// form hidden until button click
+function showComments() {
+  const x = document.getElementById("commentsSection");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}
 
-// function addComment() {
-//   const comment = document.getElementById("commentBox").value;
-//   const node = document.createElement("p");
-//   const textnode = document.createTextNode(comment);
-//   node.appendChild(textnode);
-//   document.getElementById("commentList").appendChild(node);
-//   document.getElementById("commentBox").value = "";
-// }
+function addComment() {
+  const comment = document.getElementById("commentBox").value;
+  const node = document.createElement("p");
+  const textnode = document.createTextNode(comment);
+  node.appendChild(textnode);
+  document.getElementById("commentList").appendChild(node);
+  document.getElementById("commentBox").value = "";
+}
 
