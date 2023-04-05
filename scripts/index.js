@@ -7,7 +7,7 @@ const pickMeBtn2 = document.querySelector("#selector2");
 const foodTitle1 = document.querySelector("#title-1");
 const foodTitle2 = document.querySelector("#title-2");
 
-let currentBreakfast = null;
+let currentBreakfast;
 
 fetch("http://localhost:3000/breakfast")
   .then((r) => r.json())
@@ -27,6 +27,7 @@ imgLeft.addEventListener("mouseover", () => {
 	popup.style.width = "200px";
 	popup.style.height = "auto";
 	document.body.appendChild(popup);
+  console.log(currentBreakfast)
 
 	imgLeft.addEventListener("mouseout", () => {
 		if (popup && popup.parentNode) {
