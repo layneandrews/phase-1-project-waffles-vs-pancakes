@@ -1,37 +1,38 @@
 {
-    "breakfast" :[
+    "foods" :[
         {
             "id": "1",
-            "name": "Waffles",
+            "name": "waffles",
             "image": "./assets/pictures/Waffles.png",
             "note": "If waffles never existed, there would be no Waffle House. Nike wouldn't have been able to make their first pair of sneakers, the Waffle Trainers. No waffle ice cream cones, no chicken and waffles, no Belgium Waffles. Politicians wouldn't waffle, they would flapjack."
         },
 
         {
             "id": "2",
-            "name": "Pancakes",
+            "name": "pancakes",
             "image": "./assets/pictures/Pancakes.png",
             "note": "If pancakes never existed, crepes would have likely swept the world as the breakfast grain of choice. There would be no International House of Pancakes. Without a reason to export as much maple syrup, Canada's number 1 food export would be bagged milk. Their economy would surely collapse."
         },
 
         {
             "id": "3",
-            "name": "Omelettes",
+            "name": "omelettes",
             "image": "./assets/pictures/Omelette.png",
             "note": "Without omelettes, the people of Denver would elect a new namesake breakfast food. It would be breakfast chili: regular hatch green chile made with bacon instead of pork."
         },
 
         {
             "id": "4",
-            "name": "Granola",
-            "image": "./assets/pictures/Granola.png",
+            "name": "granola",
+            "image": "./assets/pictures/granola.png",
             "note": "No more Honey Bunches of Oats. Without this convenient option, health-consious people would consume more fresh fruit for breakfast, putting a strain on the ecosystem and burdening production in tropical locations. Granola moms would be referred to as dried fruit moms."
         },
 
         {
             "id": "5",
-            "name": "Bacon",
+            "name": "bacon",
             "image": "./assets/pictures/Bacon.png",
             "note": "If bacon never existed, rates of heart disease would drop significantly. However, Americans would likely have invented something equally unhealthy in its place, such as breakfast ribs or fried ham. There would be no more bacon-flavored or bacon-scented novelty products, significantly limiting your gift options for your brother in law you don't know much about."
         }
+
 ]}
