@@ -35,6 +35,76 @@
             "name": "bacon",
             "image": "./assets/pictures/Bacon.png",
             "note": "If bacon never existed, rates of heart disease would drop significantly. However, Americans would likely have invented something equally unhealthy in its place, such as breakfast ribs or fried ham. There would be no more bacon-flavored or bacon-scented novelty products, significantly limiting your gift options for your brother in law you don't know much about."
-        }
+        },
+
+        {
+            "id": "6",
+            "name": "Bacon Cheeseburger",
+            "image":,
+            "note": "Bacon cheeseburgers are believed to have originated in the United States in the 1960s, and they remain one of the most popular burger varieties today.",
+        },
+
+        {
+            "id": "7",
+            "name": "lasagna",
+            "image":,
+            "note": "A fun fact about lasagna is that it is believed to have originated in ancient Greece, where layered dishes were common, and it was later adopted and adapted by the Italians into the dish we know and love today. In fact, the word 'lasagna' comes from the Greek word 'lasanon,' which refers to a cooking pot or dish.",
+        },
+
+        {
+            "id": "8",
+            "name": "Pepperoni Pizza",
+            "image":,
+            "note": "Pepperoni pizza is the most popular pizza variety in the United States, accounting for approximately 36% of all pizza orders. In fact, Americans consume an estimated 251.7 million pounds of pepperoni annually, which is enough to circle the Earth 33 times!",
+        },
+
+        {
+            "id": "9",
+            "name": "Steak",
+            "image":,
+            "note": "A fun fact about steak is that the world's most expensive steak is the Wagyu beef steak from Japan. It is so expensive that it can cost up to $450 per pound! The high cost is due to the way the cattle are raised, which involves a special diet and rigorous exercise to develop a high level of marbling in the meat, resulting in a tender and flavorful steak.",
+        },
+
+        {
+            "id": "10",
+            "name": "Loaded Baked Potato",
+            "image":,
+            "note": "A fun fact about loaded baked potatoes is that they were popularized in the United States during the 1970s as a result of a marketing campaign by the Idaho Potato Commission. The campaign encouraged restaurants to promote baked potatoes as a meal in and of themselves, and loaded baked potatoes soon became a popular menu item, with toppings ranging from butter and sour cream to bacon bits, chives, and cheese. Today, loaded baked potatoes remain a popular and versatile dish that can be customized to suit individual tastes.",
+        },
+
+        {
+            "id": "11",
+            "name":,
+            "image":,
+            "note":,
+        },
+
+        {
+            "id": "12",
+            "name":,
+            "image":,
+            "note":,
+        },
+
+        {
+            "id": "13",
+            "name":,
+            "image":,
+            "note":,
+        },
+
+        {
+            "id": "14",
+            "name":,
+            "image":,
+            "note":,
+        },
+
+        {
+            "id": "15",
+            "name":,
+            "image":,
+            "note":,
+        },
 
 ]}
