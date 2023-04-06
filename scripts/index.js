@@ -10,7 +10,7 @@ const foodTitle2 = document.querySelector("#title-2");
 let currentBreakfast = null;
 let currentPopupNote = null;
 
-fetch("http://localhost:3000/breakfast")
+fetch("http://localhost:3000/foods")
   .then((r) => r.json())
   .then((breakfast) => {
     imgLeft.src = breakfast[0].image;
