@@ -1,5 +1,5 @@
 body {
-    background-color: yellow;
+  background: linear-gradient(0.25turn, #2892dd, #ebf8e1, #f69d3c);
     border-style: solid;
     border-width: thick;
     border-color:rgb(255, 136, 0);
