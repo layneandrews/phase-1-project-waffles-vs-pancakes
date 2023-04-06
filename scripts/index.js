@@ -64,17 +64,26 @@ imgRight.addEventListener("mouseover", () => {
 pickMeBtn1.addEventListener("click", () => {
   let randomIndex = Math.floor(Math.random() * breakfastArray.length);
   let newBreakfast = breakfastArray[randomIndex];
+  const pickmeMsg = document.createElement('h2');
+  pickmeMsg.textContent = `You chose to keep ${foodTitle1.textContent}! Are u serious?!?!`
+  console.log(currentBreakfast.name);
+  document.body.append(pickmeMsg);
   if (newBreakfast.id !== currentBreakfast?.id) {
     imgRight.src = newBreakfast.image;
     foodTitle2.textContent = newBreakfast.name;
     currentBreakfast = newBreakfast;
     currentPopupNote = newBreakfast.note;
   }
+  
+
 });
 
 pickMeBtn2.addEventListener("click", () => {
   let randomIndex = Math.floor(Math.random() * breakfastArray.length);
   let newBreakfast = breakfastArray[randomIndex];
+  const pickmeMsg = document.createElement('h2');
+  pickmeMsg.textContent = `You chose to keep ${foodTitle2.textContent}! Homie whaaaaaaa??`
+  document.body.append(pickmeMsg);
   if (newBreakfast.id !== currentBreakfast?.id) {
     imgLeft.src = newBreakfast.image;
     foodTitle1.textContent = newBreakfast.name;
