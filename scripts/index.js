@@ -9,6 +9,7 @@ const foodTitle2 = document.querySelector("#title-2");
 
 let currentBreakfast = null;
 let currentPopupNote = null;
+let breakfastArray = null;
 
 fetch("http://localhost:3000/foods")
   .then((r) => r.json())
@@ -21,9 +22,11 @@ fetch("http://localhost:3000/foods")
     currentPopupNote = breakfast[0].note;
   });
 
-imgLeft.addEventListener("mouseover", () => {
+imgLeft.addEventListener("mouseover", (e) => {
   const popup = document.createElement("div");
-  popup.textContent = currentPopupNote;
+  const targetFood = breakfastArray.find(food => food.name === e.target.parentElement.children[0].textContent)
+  popup.textContent = targetFood ? targetFood.note : 'Could not find, you hungry yet?';
+  
   popup.id = "popup";
   popup.style.position = "absolute";
   popup.style.top = imgLeft.offsetTop + "px";
@@ -41,9 +44,10 @@ imgLeft.addEventListener("mouseover", () => {
   });
 });
 
-imgRight.addEventListener("mouseover", () => {
+imgRight.addEventListener("mouseover", (e) => {
   const popup = document.createElement("div");
-  popup.textContent = currentPopupNote;
+  const targetFood = breakfastArray.find(food => food.name === e.target.parentElement.children[0].textContent)
+  popup.textContent = targetFood ? targetFood.note : 'Could not find, you hungry yet?';
   popup.id = "popup";
   popup.style.position = "absolute";
   popup.style.top = imgRight.offsetTop + "px";
