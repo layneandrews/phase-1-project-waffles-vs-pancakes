@@ -1,7 +1,7 @@
 {
     "foods" :[
         {   "id": "1",
-            "name": "waffles",
+            "name": "Waffles",
             "image": "./assets/pictures/Waffles.png",
             "note": "If waffles never existed, there would be no Waffle House. Nike wouldn't have been able to make their first pair of sneakers, the Waffle Trainers. No waffle ice cream cones, no chicken and waffles, no Belgium Waffles. Politicians wouldn't waffle, they would flapjack."
         },
