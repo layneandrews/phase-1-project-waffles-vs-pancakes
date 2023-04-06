@@ -102,6 +102,20 @@
             "name": "Burritos",
             "image": "./assets/pictures/Burrito.png",
             "note": "Burritos offer a delicious and flavorful meal on the go. With Chipotle and Qdoba only selling bowls and tacos that fall apart, they become sit down restaurants and increase their prices. Taquitos and quesadillas become the go-to-on-the-go meal."
+        },
+
+        {
+            "id": "16",
+            "name": "Poutine",
+            "image": "./assets/pictures/Poutine.jpg",
+            "note": "Poutine is a popular Canadian dish made of french fries topped with cheese curds and gravy. The origin of poutine is believed to be in Quebec in the 1950s, where it was first served in small diners and greasy spoons."
+        },
+
+        {
+            "id": "17",
+            "name": "Nachos",
+            "image": "./assets/pictures/Poutine.jpg",
+            "note": "Nachos were named after their inventor, Ignacio Anaya, whose nickname was 'Nacho'."
         }
     ]
 }
