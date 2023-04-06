@@ -13,6 +13,9 @@ const foodTitle2 = document.querySelector("#title-2");
 const popup = document.createElement("div");
 const noteBox = document.querySelector("#foodNoteContainer");
 
+const wvp = document.querySelector('#wvp');
+
+
 let currentBreakfastLeft = null;
 let currentBreakfastRight = null;
 let currentPopupNoteLeft = null;
@@ -73,8 +76,9 @@ imgRight.addEventListener("mouseover", (e) => {
 });
 
 pickMeBtn1.addEventListener("click", () => {
-  let randomIndex = Math.floor(Math.random() * (breakfastArray.length - 1));
-  let newBreakfast = breakfastArray.filter(food => currentBreakfastLeft.name !== food.name)[randomIndex];
+  let randomIndex = Math.floor(Math.random() * (breakfastArray.length - 1)); //selects random index [0-17]
+  let newBreakfast = breakfastArray.filter(food => currentBreakfastLeft.name !== food.name)[randomIndex]
+  console.log(newBreakfast);
   const pickmeMsg = document.createElement('h2');
   pickmeMsg.textContent = `You chose to keep ${foodTitle1.textContent} instead of ${foodTitle2.textContent}! Are u serious?!?!`
   document.body.append(pickmeMsg);
@@ -84,22 +88,24 @@ pickMeBtn1.addEventListener("click", () => {
     currentBreakfastRight = newBreakfast;
     currentPopupNoteRight = newBreakfast.note;
   }
-  
-
 });
 
 pickMeBtn2.addEventListener("click", () => {
-  let randomIndex = Math.floor(Math.random() * breakfastArray.length);
+  let randomIndex = Math.floor(Math.random() * (breakfastArray.length - 1));
   let newBreakfast = breakfastArray.filter((food) => currentBreakfastRight.name !== food.name)[randomIndex];
   const pickmeMsg = document.createElement('h2');
   pickmeMsg.textContent = `You chose to keep ${foodTitle2.textContent} instead of ${foodTitle1.textContent}! Homie whaaaaaaa??`
   document.body.append(pickmeMsg);
+  console.log(newBreakfast, currentBreakfastRight);
   if (newBreakfast.id !== currentBreakfastRight?.id) {
     imgLeft.src = newBreakfast.image;
     foodTitle1.textContent = newBreakfast.name;
     currentBreakfastLeft = newBreakfast;
     currentPopupNoteLeft = newBreakfast.note;
-  }
+  // } else if (newBreakfast.id === currentBreakfastRight?.id); {
+  //   console.log("hello!!!!!!!!!");
+  // }
+  };
 });
 
 // Get the necessary elements from the HTML
