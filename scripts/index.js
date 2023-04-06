@@ -82,3 +82,40 @@ pickMeBtn2.addEventListener("click", () => {
     currentPopupNote = newBreakfast.note;
   }
 });
+
+// Get the necessary elements from the HTML
+const commentsButton = document.querySelector('.button-52');
+const commentsSection = document.getElementById('commentsSection');
+const commentForm = document.getElementById('commentForm');
+const commentBox = document.getElementById('commentBox');
+const commentList = document.getElementById('commentList');
+
+// Function to toggle the display of the comments section
+function showComments() {
+  commentsSection.style.display = 'block';
+}
+
+// Function to add a new comment to the comment list
+function addComment(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Get the value of the comment box
+  const comment = commentBox.value;
+
+  // Create a new list item to hold the comment
+  const newComment = document.createElement('li');
+  newComment.innerText = comment;
+
+  // Add the new comment to the comment list
+  commentList.appendChild(newComment);
+
+  // Clear the comment box
+  commentBox.value = '';
+}
+
+// Add a submit event listener to the comment form
+commentForm.addEventListener('submit', addComment);
+
+// Add a click event listener to the comments button
+commentsButton.addEventListener('click', showComments);
