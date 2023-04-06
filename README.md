@@ -34,6 +34,18 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
+
+## Future Development
+
+In future phases of this project our team plans to expand the functionality of our app to support and encourage multiplayer usage both in person and online. Some added features will include:
+•	A built-in countdown timer display
+•	Sound effects
+•	Team assignment and scorekeeping functionality
+•	Support for multiple clients/browsers
+We would also like to improve the code with an expanded database or API integration, and the ability to eliminate items from being included in the selection process once they have already been chosen.
+
+
 ## License
+
 
 [MIT](https://choosealicense.com/licenses/mit/)
