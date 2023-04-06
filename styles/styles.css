@@ -33,6 +33,16 @@ h1 {
   /* adjust this value to change the distance between the image-cards */
 }
 
+.food-note-container {
+  width: 250px;
+  height: auto;
+  margin-left: 5%;
+  margin-right:5%;
+  border-style: double;
+  border-width: thick;
+  border-color:rgb(255, 136, 0);
+  background-color: rgb(244, 232, 141);
+}
 .selector {
   margin-top: 10px;
       /* adjust this value to change the distance between the image and the button */

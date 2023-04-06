@@ -1,14 +1,22 @@
 const imgLeft = document.querySelector("#image-card1 > img");
 const imgRight = document.querySelector("#image-card2 > img");
 
+const imgLeftCard = document.querySelector("#image-card1");
+const imgRightCard = document.querySelector("#image-card2");
+
 const pickMeBtn1 = document.querySelector("#selector1");
 const pickMeBtn2 = document.querySelector("#selector2");
 
 const foodTitle1 = document.querySelector("#title-1");
 const foodTitle2 = document.querySelector("#title-2");
 
-let currentBreakfast = null;
-let currentPopupNote = null;
+const popup = document.createElement("div");
+const noteBox = document.querySelector("#foodNoteContainer");
+
+let currentBreakfastLeft = null;
+let currentBreakfastRight = null;
+let currentPopupNoteLeft = null;
+let currentPopupNoteRight = null;
 let breakfastArray = null;
 
 fetch("http://localhost:3000/foods")
@@ -18,26 +26,27 @@ fetch("http://localhost:3000/foods")
     imgRight.src = breakfast[1].image;
 
     breakfastArray = breakfast;
-    currentBreakfast = breakfast[0];
-    currentPopupNote = breakfast[0].note;
+    currentBreakfastLeft = breakfast[0];
+    currentBreakfastRight = breakfast[1];
+    currentPopupNoteLeft = breakfast[0].note;
+    currentPopupNoteRight = breakfast[1].note;
   });
 
 imgLeft.addEventListener("mouseover", (e) => {
-  const popup = document.createElement("div");
-  const targetFood = breakfastArray.find(food => food.name === e.target.parentElement.children[0].textContent)
-  popup.textContent = targetFood ? targetFood.note : 'Could not find, you hungry yet?';
-  
+  console.log("HELLO")
+
+  // const targetFood = breakfastArray.find(food => food.name === e.target.parentElement.children[0].textContent)
+  popup.textContent = currentPopupNoteLeft;
   popup.id = "popup";
-  popup.style.position = "absolute";
-  popup.style.top = imgLeft.offsetTop + "px";
-  popup.style.left = imgLeft.offsetLeft + "px";
-  popup.style.backgroundColor = "white";
-  popup.style.width = "200px";
-  popup.style.height = "auto";
-  document.body.appendChild(popup);
+  // popup.style.position = "absolute";
+  // popup.style.top = imgLeft.offsetTop + "px";
+  // popup.style.left = imgLeft.offsetLeft + "px";
+  // popup.style.backgroundColor = "white";
+  // popup.style.width = "200px";
+  // popup.style.height = "auto";
+  noteBox.appendChild(popup);
 
   imgLeft.addEventListener("mouseout", () => {
-    const popup = document.querySelector("#popup");
     if (popup && popup.parentNode) {
       popup.parentNode.removeChild(popup);
     }
@@ -45,20 +54,18 @@ imgLeft.addEventListener("mouseover", (e) => {
 });
 
 imgRight.addEventListener("mouseover", (e) => {
-  const popup = document.createElement("div");
-  const targetFood = breakfastArray.find(food => food.name === e.target.parentElement.children[0].textContent)
-  popup.textContent = targetFood ? targetFood.note : 'Could not find, you hungry yet?';
+  // const targetFood = breakfastArray.find(food => food.name === e.target.parentElement.children[0].textContent)
+  popup.textContent = currentPopupNoteRight;
   popup.id = "popup";
-  popup.style.position = "absolute";
-  popup.style.top = imgRight.offsetTop + "px";
-  popup.style.left = imgRight.offsetLeft + "px";
-  popup.style.backgroundColor = "white";
-  popup.style.width = "200px";
-  popup.style.height = "auto";
-  document.body.appendChild(popup);
+  // popup.style.position = "absolute";
+  // popup.style.top = imgRight.offsetTop + "px";
+  // popup.style.left = imgRight.offsetLeft + "px";
+  // popup.style.backgroundColor = "white";
+  // popup.style.width = "200px";
+  // popup.style.height = "auto";
+  noteBox.appendChild(popup);
 
   imgRight.addEventListener("mouseout", () => {
-    const popup = document.querySelector("#popup");
     if (popup && popup.parentNode) {
       popup.parentNode.removeChild(popup);
     }
@@ -66,17 +73,16 @@ imgRight.addEventListener("mouseover", (e) => {
 });
 
 pickMeBtn1.addEventListener("click", () => {
-  let randomIndex = Math.floor(Math.random() * breakfastArray.length);
-  let newBreakfast = breakfastArray[randomIndex];
+  let randomIndex = Math.floor(Math.random() * (breakfastArray.length - 1));
+  let newBreakfast = breakfastArray.filter(food => currentBreakfastLeft.name !== food.name)[randomIndex];
   const pickmeMsg = document.createElement('h2');
   pickmeMsg.textContent = `You chose to keep ${foodTitle1.textContent} instead of ${foodTitle2.textContent}! Are u serious?!?!`
-  console.log(currentBreakfast.name);
   document.body.append(pickmeMsg);
-  if (newBreakfast.id !== currentBreakfast?.id) {
+  if (newBreakfast.id !== currentBreakfastLeft?.id) {
     imgRight.src = newBreakfast.image;
     foodTitle2.textContent = newBreakfast.name;
-    currentBreakfast = newBreakfast;
-    currentPopupNote = newBreakfast.note;
+    currentBreakfastRight = newBreakfast;
+    currentPopupNoteRight = newBreakfast.note;
   }
   
 
@@ -84,15 +90,15 @@ pickMeBtn1.addEventListener("click", () => {
 
 pickMeBtn2.addEventListener("click", () => {
   let randomIndex = Math.floor(Math.random() * breakfastArray.length);
-  let newBreakfast = breakfastArray[randomIndex];
+  let newBreakfast = breakfastArray.filter((food) => currentBreakfastRight.name !== food.name)[randomIndex];
   const pickmeMsg = document.createElement('h2');
   pickmeMsg.textContent = `You chose to keep ${foodTitle2.textContent} instead of ${foodTitle1.textContent}! Homie whaaaaaaa??`
   document.body.append(pickmeMsg);
-  if (newBreakfast.id !== currentBreakfast?.id) {
+  if (newBreakfast.id !== currentBreakfastRight?.id) {
     imgLeft.src = newBreakfast.image;
     foodTitle1.textContent = newBreakfast.name;
-    currentBreakfast = newBreakfast;
-    currentPopupNote = newBreakfast.note;
+    currentBreakfastLeft = newBreakfast;
+    currentPopupNoteLeft = newBreakfast.note;
   }
 });
 
