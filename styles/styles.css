@@ -41,14 +41,14 @@ h1 {
 /* CSS */
 .button-52 {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 900;
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0;
-  border: 1px solid rgb(255, 136, 0);
+  border: 1px solid black;
   cursor: pointer;
   position: relative;
-  background-color: white;
+  background-color: transparent;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;

@@ -116,6 +116,3 @@ function addComment(event) {
 
 // Add a submit event listener to the comment form
 commentForm.addEventListener('submit', addComment);
-
-// Add a click event listener to the comments button
-commentsButton.addEventListener('click', showComments);
