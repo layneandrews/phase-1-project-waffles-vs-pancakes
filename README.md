@@ -17,30 +17,15 @@ CC&L -->
 
 # Foobar
 
-This project
+This project is a digital implementation of the ice breaker game "Waffles VS. Pancakes".
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
+Fork and clone a copy of the repository at: https://github.com/layneandrews/phase-1-project-waffles-vs-pancakes. Navigate to the main directory and run <explorer.exe index.html> for Windows, and <> on Macintosh systems.
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+To use the application, decide which food option you would keep if you could only pick one and select the 'Pick Me!' button below that food. At that point, you will be presented with a choice between the food you chose and a new, different food item. This process will repeat indefinitely. The game is intended to be an icebreaker activity in both office and casual settings that will enhance team building, communication and relationships. Hovering over an image will display a unique fact about that particular food item. Clicking on the comments button will display a text box where you can type and post comments, thoughts or feelings about your food choices, the game or anything else that comes to mind!
 
 ## Contributing
 
