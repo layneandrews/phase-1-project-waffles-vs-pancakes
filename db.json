@@ -36,7 +36,7 @@
 
         {
             "id": "6",
-            "name": "Bacon Cheeseburgers",
+            "name": "Cheeseburgers",
             "image": "./assets/pictures/bacon-cheeseburger.jpg",
             "note": "Bacon cheeseburgers are believed to have originated in the United States in the 1960s, and they remain one of the most popular burger varieties today."
         },
@@ -64,14 +64,14 @@
 
         {
             "id": "10",
-            "name": "Loaded Baked Potatoes",
+            "name": "Baked Potatoes",
             "image": "./assets/pictures/loaded-baked-potato.jpg",
             "note": "A fun fact about loaded baked potatoes is that they were popularized in the United States during the 1970s as a result of a marketing campaign by the Idaho Potato Commission. The campaign encouraged restaurants to promote baked potatoes as a meal in and of themselves, and loaded baked potatoes soon became a popular menu item, with toppings ranging from butter and sour cream to bacon bits, chives, and cheese. Today, loaded baked potatoes remain a popular and versatile dish that can be customized to suit individual tastes."
         },
 
         {
             "id": "11",
-            "name": "Peanut Butter and Jelly Sandwiches",
+            "name": "PB&J Sandwiches",
             "image": "./assets/pictures/PBJ Sandwich.png",
             "note": "PB&J sandwiches were invented and popularized in America. If they were never invented, a cream cheese and jelly sandwich might be the sandwich of choice across bagged lunches. Peanut agriculture would not be as high with lower consumption of peanut butter. However, dairy production would increase, creating a larger hole in the ozone layer."
         },

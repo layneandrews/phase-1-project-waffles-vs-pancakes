@@ -15,6 +15,12 @@ const noteBox = document.querySelector("#foodNoteContainer");
 
 const wvp = document.querySelector('#wvp');
 
+const pickmeMsg = document.createElement('h2');
+
+const pickmeMsgDiv = document.querySelector('#pick-me-msg-div');
+
+
+
 
 let currentBreakfastLeft = null;
 let currentBreakfastRight = null;
@@ -79,33 +85,32 @@ pickMeBtn1.addEventListener("click", () => {
   let randomIndex = Math.floor(Math.random() * (breakfastArray.length - 1)); //selects random index [0-17]
   let newBreakfast = breakfastArray.filter(food => currentBreakfastLeft.name !== food.name)[randomIndex]
   console.log(newBreakfast);
-  const pickmeMsg = document.createElement('h2');
   pickmeMsg.textContent = `You chose to keep ${foodTitle1.textContent} instead of ${foodTitle2.textContent}! Are u serious?!?!`
-  document.body.append(pickmeMsg);
+  pickmeMsgDiv.append(pickmeMsg);
   if (newBreakfast.id !== currentBreakfastLeft?.id) {
     imgRight.src = newBreakfast.image;
     foodTitle2.textContent = newBreakfast.name;
     currentBreakfastRight = newBreakfast;
     currentPopupNoteRight = newBreakfast.note;
   }
+  wvp.textContent = `${currentBreakfastLeft.name} vs. ${currentBreakfastRight.name}`;
 });
 
 pickMeBtn2.addEventListener("click", () => {
   let randomIndex = Math.floor(Math.random() * (breakfastArray.length - 1));
   let newBreakfast = breakfastArray.filter((food) => currentBreakfastRight.name !== food.name)[randomIndex];
-  const pickmeMsg = document.createElement('h2');
+  
   pickmeMsg.textContent = `You chose to keep ${foodTitle2.textContent} instead of ${foodTitle1.textContent}! Homie whaaaaaaa??`
-  document.body.append(pickmeMsg);
+
+  pickmeMsgDiv.append(pickmeMsg);
   console.log(newBreakfast, currentBreakfastRight);
   if (newBreakfast.id !== currentBreakfastRight?.id) {
     imgLeft.src = newBreakfast.image;
     foodTitle1.textContent = newBreakfast.name;
     currentBreakfastLeft = newBreakfast;
     currentPopupNoteLeft = newBreakfast.note;
-  // } else if (newBreakfast.id === currentBreakfastRight?.id); {
-  //   console.log("hello!!!!!!!!!");
-  // }
   };
+  wvp.textContent = `${currentBreakfastLeft.name} vs. ${currentBreakfastRight.name}`;
 });
 
 // Get the necessary elements from the HTML

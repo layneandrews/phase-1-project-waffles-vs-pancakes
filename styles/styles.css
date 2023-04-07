@@ -15,15 +15,17 @@ h1 {
     border-width: thick;
     border-top-right-radius: 1cm;
     border-bottom-left-radius: 1cm;
-    width: 35%;
+    width: 55%;
     padding: 20px;
     background-color: white;
     margin-bottom: 1%;
+    flex: auto;
 }
 .image-holder {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .image-card {
   display: flex;
@@ -62,6 +64,7 @@ h1 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-bottom: 10px;
 }
 
 .button-52:after {
@@ -87,3 +90,28 @@ h1 {
   }
 }
 
+#container-div {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  display: grid;
+  margin-left: 40%;
+  margin-right: 40%;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+#commentBox {
+  width: 297px;
+  height: 61px;
+}
+
+#commentList {
+  /* width: 66%; */
+  padding: auto;
+  overflow-wrap: anywhere;
+
+}
