@@ -134,7 +134,7 @@ function addComment(event) {
   const comment = commentBox.value;
 
   // Create a new list item to hold the comment
-  const newComment = document.createElement('li');
+  const newComment = document.createElement('p');
   newComment.innerText = comment;
 
   // Add the new comment to the comment list

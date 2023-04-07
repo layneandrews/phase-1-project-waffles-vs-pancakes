@@ -1,4 +1,4 @@
-This is a project made by Cahen, Casey and Layne for our phase 1 Flatiron School project. 
+<!-- This is a project made by Cahen, Casey and Layne for our phase 1 Flatiron School project. 
 Our application is a digital implementation of the ice breaker game "Waffles VS. Pancakes"
 The user of our application will be presented with 2 different food options and be asked to keep only one of them.
 There will be a comments section where users can make notes and present their case for why a given food item should be kept over the alternative.
@@ -12,12 +12,12 @@ We are currently fetching our data for this project from a local json server usi
 
 Enjoy!!!
 
-CC&L
+CC&L -->
 
 
 # Foobar
 
-Foobar is a Python library for dealing with word pluralization.
+This project
 
 ## Installation
 
