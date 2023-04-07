@@ -19,6 +19,7 @@ const pickmeMsg = document.createElement('h3');
 
 const pickmeMsgDiv = document.querySelector('#pick-me-msg-div');
 
+const audio = new Audio("assets/sounds/bell.wav");
 
 
 
@@ -94,6 +95,7 @@ pickMeBtn1.addEventListener("click", () => {
     currentPopupNoteRight = newBreakfast.note;
   }
   wvp.textContent = `${currentBreakfastLeft.name} vs. ${currentBreakfastRight.name}`;
+  audio.play();
 });
 
 pickMeBtn2.addEventListener("click", () => {
@@ -111,6 +113,7 @@ pickMeBtn2.addEventListener("click", () => {
     currentPopupNoteLeft = newBreakfast.note;
   };
   wvp.textContent = `${currentBreakfastLeft.name} vs. ${currentBreakfastRight.name}`;
+  audio.play();
 });
 
 // Get the necessary elements from the HTML
