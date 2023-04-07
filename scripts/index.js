@@ -15,7 +15,7 @@ const noteBox = document.querySelector("#foodNoteContainer");
 
 const wvp = document.querySelector('#wvp');
 
-const pickmeMsg = document.createElement('h2');
+const pickmeMsg = document.createElement('h3');
 
 const pickmeMsgDiv = document.querySelector('#pick-me-msg-div');
 

@@ -1,10 +1,11 @@
-body {
-  background: linear-gradient(0.25turn, #2892dd, #eeeebe, #e03cf6); 
+  body{
+    background: linear-gradient(0.25turn, #d468e7, #2ac3af, #ff9103);
     border-style: solid;
     border-width: thick;
-    border-color:rgb(255, 136, 0);
+    border-color:white;
     padding: 5%;
-}
+ }
+
 h1 {
     margin: auto;
     color: rgb(255, 136, 0);
@@ -15,12 +16,47 @@ h1 {
     border-width: thick;
     border-top-right-radius: 1cm;
     border-bottom-left-radius: 1cm;
-    width: 55%;
+    width: 60%;
     padding: 20px;
     background-color: white;
     margin-bottom: 1%;
     flex: auto;
 }
+
+h2 {
+  margin: auto;
+  color: rgb(255, 136, 0);
+  text-align: center;
+  font-size: 20px;
+  border-style: solid;
+  border-color: rgb(255, 136, 0);
+  border-width: thick;
+  border-top-right-radius: 0.5cm;
+  border-bottom-left-radius: 0.5cm;
+  width: 80%;
+  padding: 25px;
+  background-color: white;
+  margin-bottom: 1%;
+  flex: auto;
+}
+
+h3 {
+  margin: auto;
+  color: rgb(255, 136, 0);
+  text-align: center;
+  font-size: 24px;
+  border-style: solid;
+  border-color: rgb(255, 136, 0);
+  border-width: thick;
+  border-top-right-radius: 0.5cm;
+  border-bottom-left-radius: 0.5cm;
+  width: 65%;
+  padding: 25px;
+  background-color: white;
+  margin-bottom: 1%;
+  flex: auto;
+}
+
 .image-holder {
     display: flex;
     justify-content: center;
@@ -57,7 +93,7 @@ h1 {
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0;
-  border: 1px solid black;
+  border: 5px solid #ff9103;
   cursor: pointer;
   position: relative;
   background-color: transparent;
@@ -69,7 +105,7 @@ h1 {
 
 .button-52:after {
   content: "";
-  background-color: rgb(255, 136, 0);
+  background-color: white;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -114,4 +150,11 @@ h2 {
   padding: auto;
   overflow-wrap: anywhere;
 
+}
+
+img {
+	border: 2px solid #ff9103; 
+	box-shadow: 8px 8px 10px #070606;
+  padding: 1px;
+  border-radius: 5%;
 }
